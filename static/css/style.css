@@ -1,0 +1,207 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Add background color with some padding */
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: #fffcfcf2;
+  }
+
+  /* Settings for ul style */
+  .navul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Settings for li style */
+  .navli {
+    float: left;
+  }
+  
+  /* Settings for li a style */
+  .navli a {
+    display: inline-block;
+    color: #000;
+    text-align: center;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  /* Change the link color on hover */
+  .navli a:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  /* Settings for h1 style */
+h1 {
+    text-align: center;
+}
+
+ul {
+    list-style-position: inside;
+}
+
+li,
+p {
+  line-height: 1.5;
+}
+
+/* Settings for footer style */
+footer {
+    color: #555;
+    background-color: rgb(198, 237, 224);
+    text-align: center;
+    font-size: small;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 20%;
+    padding: 15px;
+}
+  
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: white;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 75%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    padding-left: 20px;
+  }
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: #aaa;
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Block image */
+  .blogimg {
+    text-align: left;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: white;
+     padding: 20px;
+     margin-top: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+    }
+
+    /* products gallery css */
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  div.galltitle{
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+
+  div.desc {
+    padding: 15px;
+    text-align: justify;
+    font-size: small;
+  }
+
+  div.price {
+    padding: 15px;
+    text-align: center;
+    color: blue;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  /* end product gallery css */
